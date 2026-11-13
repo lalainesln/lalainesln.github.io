@@ -6,7 +6,7 @@ import { PdfViewer } from './viewers/PdfViewer.jsx';
 
 const resume = {
   id: 'cv',
-  kind: 'pdf',
+  kind: 'cv',
   format: 'PDF',
   title: 'Curriculum vitae',
   detail: 'Licenses, technical toolkit, site roles, and education, on two pages.',
@@ -59,6 +59,9 @@ const samples = [
 ];
 
 function SampleViewer({ sample }) {
+  if (sample.kind === 'cv') {
+    return <iframe className="cv-frame" src={sample.href} title={sample.title} />;
+  }
   if (sample.kind === 'pdf') return <PdfViewer url={sample.href} />;
   if (sample.kind === 'dwg') return <DwgViewer url={sample.href} fileName={sample.fileName} />;
 
@@ -98,7 +101,7 @@ export function CvSection({ onOpen }) {
         </div>
         <div className="sample-actions">
           <button type="button" className="button button-primary" onClick={() => onOpen(resume.id)}>
-            View
+            View CV
           </button>
           <a className="button button-secondary" href={resume.href} download={resume.fileName}>
             <Download size={18} aria-hidden="true" />
@@ -189,6 +192,11 @@ export function WorkSamples({ activeSample, onOpen, onClose }) {
                 <h3 id={titleId}>{sample.title}</h3>
               </div>
               <div className="viewer-header-actions">
+                {sample.kind === 'cv' && (
+                  <a className="button button-secondary" href={sample.href} target="_blank" rel="noopener">
+                    Open PDF in new tab
+                  </a>
+                )}
                 <a className="button button-secondary" href={sample.href} download={sample.fileName}>
                   <Download size={18} aria-hidden="true" />
                   Download

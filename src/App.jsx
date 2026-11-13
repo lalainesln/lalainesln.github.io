@@ -14,12 +14,12 @@ import { CvSection, WorkSamples } from './WorkSamples.jsx';
 
 const portfolio = {
   name: 'Engr. Lalaine Aubrey T. Solano',
-  title: 'Structural-focused Civil Engineer',
+  title: 'Site Engineering and Project Coordination',
   location: 'Malabon City, Philippines',
   email: 'sln.lalaineaubrey@gmail.com',
   linkedinUrl: '',
   summary:
-    'Licensed Civil Engineer and Registered Master Plumber with a structural engineering foundation and practical construction site execution experience across commercial, resort, residential, and villa developments.',
+    'Licensed Civil Engineer and Registered Master Plumber with experience in site inspections, contractor coordination, and construction documentation across commercial, resort, residential, and villa developments.',
 };
 
 const credentials = [
@@ -57,34 +57,34 @@ const projects = [
     name: 'Magsalin Law Office',
     location: 'Katipunan Extension, Marikina City',
     company: 'Victor Consunji Development Corporation',
-    period: 'May 2026 - Present',
+    period: 'May 2026 - October 2026',
     focus: 'Site engineering support, contract review, project reporting, and subcontractor coordination.',
     highlights: [
-      'Reviews construction contracts, agreements, invoices, change orders, and correspondence.',
-      'Monitors delays, site issues, non-compliance, manhour reports, and wage expenses.',
-      'Coordinates with project managers, architects, CAD operators, site engineers, and subcontractors.',
+      'Reviewed construction contracts, agreements, invoices, change orders, and correspondence.',
+      'Monitored delays, site issues, non-compliance, manhour reports, and wage expenses.',
+      'Coordinated with project managers, architects, CAD operators, site engineers, and subcontractors.',
     ],
   },
   {
     name: 'M Residences Mowelfund',
     location: 'Katipunan Extension, Marikina City',
     company: 'Victor Consunji Development Corporation',
-    period: 'May 2026 - Present',
+    period: 'May 2026 - October 2026',
     focus: 'Residential site coordination and project documentation support.',
     highlights: [
-      'Tracks progress and documentation across a multi-disciplinary site team.',
-      'Processes project reports and administrative controls that keep field execution accountable.',
+      'Tracked progress and documentation across a multi-disciplinary site team.',
+      'Processed project reports and administrative controls that keep field execution accountable.',
     ],
   },
   {
     name: 'Carmen Garden Villas',
     location: 'Katipunan Extension, Marikina City',
     company: 'Victor Consunji Development Corporation',
-    period: 'May 2026 - Present',
+    period: 'May 2026 - October 2026',
     focus: 'Villa development coordination, site reporting, and construction administration.',
     highlights: [
-      'Supports field coordination between technical staff and subcontractors.',
-      'Maintains issue visibility through progress reporting and document tracking.',
+      'Supported field coordination between technical staff and subcontractors.',
+      'Maintained issue visibility through progress reporting and document tracking.',
     ],
   },
 ];
@@ -109,7 +109,7 @@ const strengths = [
 
 const timeline = [
   {
-    date: '2026 - Present',
+    date: 'May - October 2026',
     title: 'Junior Project Site Engineer',
     body: 'Victor Consunji Development Corporation',
   },
@@ -308,7 +308,7 @@ function App() {
       <section className="contact-section" id="contact">
         <div>
           <p className="eyebrow">Contact</p>
-          <h2>Available for structural-focused civil engineering opportunities.</h2>
+          <h2>Available for site engineering and project coordination opportunities.</h2>
           <p>
             Based in {portfolio.location}, with practical experience coordinating site teams,
             contractors, consultants, and construction documentation.
